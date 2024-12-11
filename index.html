@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Righteous" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>25 + 5 Clock</title>
+</head>
+<body>
+    <div id="container">
+        <div id="app">
+            <div>
+                <div class="main-title">25 + 5 clock</div>
+                <div class="length-control">
+                    <div id="break-label">Break Length</div>
+                    <button class="btn-level" id="break-decrement" value="-">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                    <div class="btn-level" id="break-length">5</div>
+                    <button class="btn-level" id="break-increment" value="+">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+                <div class="length-control">
+                    <div id="session-label">Session Length</div>
+                    <button class="btn-level" id="session-decrement" value="-">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                    <div class="btn-level" id="session-length">25</div>
+                    <button class="btn-level" id="session-increment" value="+">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </button>
+                </div>
+                <div class="timer" style="color: white;">
+                    <div class="timer-wrapper">
+                        <div id="timer-label">Sessions</div>
+                        <div id="time-left">25:00</div>
+                    </div>
+                </div>
+                <div class="timer-control">
+                    <div id="start_stop">
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <div id="reset">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                </div>
+                <div class="author">
+                    Design and Coded by
+                    <br>
+                    <a href="https://www.linkedin.com/in/khaled-sarta/" target="_blank">Khaled Elsarta</a>
+                </div>
+                <audio preload="auto" src="https://cdn.freecodecamp.org/testable-projects-fcc/audio/BeepSound.wav" id="beep"></audio>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script crossorigin="" src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script crossorigin="" src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
